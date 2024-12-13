@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Pag 11</title>
+</head>
+
+<body>
+
+    <button onclick="hide(this, true); debug('hide button 1');">Hide 1</button>
+    <button onclick=" hide(this); debug('hide button 2');">Hide 2</button>
+
+
+    <script>
+        function hide(e, reflow) {
+            if (reflow) {
+                e.style.display = "none"
+            } else {
+                e.style.visibility = "hidden"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
